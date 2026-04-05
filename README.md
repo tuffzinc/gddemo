@@ -1,5 +1,5 @@
 ![](logo.png)
-this is a [(mostly)](https://github.com/sogful/gddemo/tree/main/game/src/DependencySlop.js) complete deobfuscation of the demo from [geometrydash.com](https://geometrydash.com). the code is split up into multiple js files and all other assets are organized.
+this is a [(mostly)](https://github.com/sogful/gddemo/tree/main/src/game/DependencySlop.js) complete deobfuscation of the demo from [geometrydash.com](https://geometrydash.com). the code is split up into multiple js files and all other assets are organized.
 
 ### running
 
