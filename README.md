@@ -1,12 +1,11 @@
-![](logo.png)
-this is a [(mostly)](https://github.com/sogful/gddemo/blob/main/src/DependencySlop.js) complete deobfuscation of the demo from [geometrydash.com](https://geometrydash.com). the code is split up into multiple js files and all other assets are organized.
+# THE ONE AND ONLY NERD DASH
 
-### running
+### how to run this shit
 
 - clone the repository:
    ```
-   git clone https://github.com/sogful/gddemo.git
-   cd gddemo
+   git clone https://github.com/tuffzinc/nerd-dash-aka-smellybread.git
+   cd nerd-dash-aka-smellybread
    ```
 - install dependencies:
    ```
@@ -18,15 +17,7 @@ this is a [(mostly)](https://github.com/sogful/gddemo/blob/main/src/DependencySl
    ```
 - run it in your browser:
    ```
-   npx serve .
+   npx http-server
    ```
-   (or ``python -m http.server`` / ``npx http-server``)
-
-## key code segments
-
-- `src/game/GameBootstrap.js` - phaser config and bootstrap
-- `src/game/BootScene.js` - asset loading and initial setup
-- `src/game/GameScene.js` - main game logic
-
-- `src/Globals.js` - game config
-- `src/game/Buttons.js` - button actions/links config
+## things i added
+- idfk i just fucked with shit
