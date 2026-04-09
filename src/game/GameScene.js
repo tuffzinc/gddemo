@@ -80,7 +80,7 @@ class GameScene extends Phaser.Scene {
     this._level.container.setVisible(false);
     this._level.topContainer.setVisible(false);
     this._attempts = 1;
-    this._pauseLevelTitle = "Stereo Madness";
+    this._pauseLevelTitle = "Shit puller 67";
     this._pauseTitleText = null;
     this._bestPercent = 0;
     this._lastPercent = 0;
@@ -96,7 +96,7 @@ class GameScene extends Phaser.Scene {
     this._player.setShipVisible(false);
     this._logo = this.add.image(0, 100, "GJ_WebSheet", "GJ_logo_001.png").setScrollFactor(0).setDepth(30);
     this._robLogo = this.add.image(160, 555, "GJ_WebSheet", "RobTopLogoBig_001.png").setScrollFactor(0).setDepth(30).setScale(0.9);
-    this._copyrightText = this.add.text(0, 625, "© 2026 RobTop Games · geometrydash.com", {
+    this._copyrightText = this.add.text(0, 625, "© the best web dev FORTNITE POOP cus hes tuff", {
       fontSize: "14px",
       color: "#ffffff",
       fontFamily: "Arial"
@@ -458,13 +458,13 @@ class GameScene extends Phaser.Scene {
     this._makeBouncyButton(ytBtn, 0.5, () => {
       window.open(GD_INFO_CREDITS_YOUTUBE_URL, "_blank");
     });
-    const legal1 = this.add.text(centerX, 446, "© 2026 RobTop Games. All rights reserved.", {
+    const legal1 = this.add.text(centerX, 446, "© fortnite poop cus hes epik.", {
       fontSize: "12px",
       color: "#000000",
       fontFamily: "Arial"
     }).setOrigin(0.5, 0.5).setAlpha(0.7).setResolution(2);
     this._infoPopup.add(legal1);
-    const legal2 = this.add.text(centerX, 463, "There was also some other text but it isn't really important.", {
+    const legal2 = this.add.text(centerX, 463, "bread smells like shit and pinkdev is better", {
       fontSize: "12px",
       color: "#000000",
       fontFamily: "Arial"
