@@ -3,7 +3,7 @@ const gameConfig = {
     width: gameWidth * renderScale,
     height: gameHeight * renderScale,
     fps: {smoothStep: true},
-    backgroundColor: "#ffffff",
+    backgroundColor: "#ff0000",
     parent: document.body,
     input: {windowEvents: false},
     render: {powerPreference: "high-performance"},

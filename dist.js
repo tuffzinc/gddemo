@@ -78181,8 +78181,8 @@ class Player {
     this._scene = scene;
     this.p = physicsState;
     this._gameLayer = gameLayer;
-    this._rotation = 0;
-    this.rotateActionActive = false;
+    this._rotation = 118;
+    this.rotateActionActive = true;
     this.rotateActionTime = 0;
     this.rotateActionDuration = 0;
     this.rotateActionStart = 0;
@@ -78292,8 +78292,8 @@ class Player {
     this._flyParticleEmitter = scene.add.particles(0, 0, "GJ_WebSheet", {
       frame: "square.png",
       speed: {
-        min: 22,
-        max: 38
+        min: 50,
+        max: 60
       },
       angle: {
         min: 225,
@@ -79367,7 +79367,6 @@ class Player {
     this._endAnimating = false;
     this._lastLandObject = null;
     this._lastXOffset = 0;
-    this.stopRotation();
     this.rotateActionTime = 0;
     this._rotation = 0;
     this._lastCameraX = 0;
@@ -79444,14 +79443,14 @@ class ColorManager {
   reset() {
     this._colors = {
       [COLOR_ID_BACKGROUND]: {
-        r: 0,
-        g: 102,
-        b: 255
+        r: 300,
+        g: 0,
+        b: 0
       },
       [COLOR_ID_GROUND]: {
-        r: 0,
-        g: 68,
-        b: 170
+        r: 300,
+        g: 0,
+        b: 0
       }
     };
     this._actions = {};
@@ -79660,7 +79659,7 @@ const GD_SCENE_FADE_MS = {
   END_MENU_IN: 400
 };
 
-const GD_INFO_CREDITS_YOUTUBE_URL = "https://www.youtube.com/watch?v=JhKyKEDxo8";
+const GD_INFO_CREDITS_YOUTUBE_URL = "https://www.youtube.com/watch?v=JhKyKEDxo8Q";
 
 const GD_MENU_STORE_DOWNLOADS = [{
   key: "downloadSteam_001",
@@ -79786,7 +79785,7 @@ class GameScene extends Phaser.Scene {
     this._level.container.setVisible(false);
     this._level.topContainer.setVisible(false);
     this._attempts = 1;
-    this._pauseLevelTitle = "Stereo Madness";
+    this._pauseLevelTitle = "Stereo Shit Puller";
     this._pauseTitleText = null;
     this._bestPercent = 0;
     this._lastPercent = 0;
@@ -79802,7 +79801,7 @@ class GameScene extends Phaser.Scene {
     this._player.setShipVisible(false);
     this._logo = this.add.image(0, 100, "GJ_WebSheet", "GJ_logo_001.png").setScrollFactor(0).setDepth(30);
     this._robLogo = this.add.image(160, 555, "GJ_WebSheet", "RobTopLogoBig_001.png").setScrollFactor(0).setDepth(30).setScale(0.9);
-    this._copyrightText = this.add.text(0, 625, "© 2026 RobTop Games · geometrydash.com", {
+    this._copyrightText = this.add.text(0, 625, "© the best web dev FORTNITE POOP cus hes tuff", {
       fontSize: "14px",
       color: "#ffffff",
       fontFamily: "Arial"
@@ -79979,7 +79978,7 @@ class GameScene extends Phaser.Scene {
     }
   }
   _buildHUD() {
-    this._attemptsLabel = this.add.bitmapText(0, 0, "bigFont", "Attempt 1", 65).setOrigin(0.5, 0.5).setVisible(false);
+    this._attemptsLabel = this.add.bitmapText(0, 0, "bigFont", "Attempt 67", 65).setOrigin(0.5, 0.5).setVisible(false);
     this._level.topContainer.add(this._attemptsLabel);
     this._positionAttemptsLabel();
     this._fpsText = this.add.text(gameWidth - 20, 10, "", {
@@ -80164,13 +80163,13 @@ class GameScene extends Phaser.Scene {
     this._makeBouncyButton(ytBtn, 0.5, () => {
       window.open(GD_INFO_CREDITS_YOUTUBE_URL, "_blank");
     });
-    const legal1 = this.add.text(centerX, 446, "© 2026 RobTop Games. All rights reserved.", {
+    const legal1 = this.add.text(centerX, 446, "© fortnite poop cus hes epik.", {
       fontSize: "12px",
       color: "#000000",
       fontFamily: "Arial"
     }).setOrigin(0.5, 0.5).setAlpha(0.7).setResolution(2);
     this._infoPopup.add(legal1);
-    const legal2 = this.add.text(centerX, 463, "There was also some other text but it isn't really important.", {
+    const legal2 = this.add.text(centerX, 463, "bread smells like shit and pinkdev is better", {
       fontSize: "12px",
       color: "#000000",
       fontFamily: "Arial"
@@ -81425,7 +81424,7 @@ const gameConfig = {
     width: gameWidth * renderScale,
     height: gameHeight * renderScale,
     fps: {smoothStep: true},
-    backgroundColor: "#000000",
+    backgroundColor: "#ff0000",
     parent: document.body,
     input: {windowEvents: false},
     render: {powerPreference: "high-performance"},

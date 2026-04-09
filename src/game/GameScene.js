@@ -80,7 +80,7 @@ class GameScene extends Phaser.Scene {
     this._level.container.setVisible(false);
     this._level.topContainer.setVisible(false);
     this._attempts = 1;
-    this._pauseLevelTitle = "Shit puller 67";
+    this._pauseLevelTitle = "Stereo Shit Puller";
     this._pauseTitleText = null;
     this._bestPercent = 0;
     this._lastPercent = 0;
@@ -273,7 +273,7 @@ class GameScene extends Phaser.Scene {
     }
   }
   _buildHUD() {
-    this._attemptsLabel = this.add.bitmapText(0, 0, "bigFont", "Attempt 1", 65).setOrigin(0.5, 0.5).setVisible(false);
+    this._attemptsLabel = this.add.bitmapText(0, 0, "bigFont", "Attempt 67", 65).setOrigin(0.5, 0.5).setVisible(false);
     this._level.topContainer.add(this._attemptsLabel);
     this._positionAttemptsLabel();
     this._fpsText = this.add.text(gameWidth - 20, 10, "", {

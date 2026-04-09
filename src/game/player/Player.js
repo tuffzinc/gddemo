@@ -3,7 +3,7 @@ class Player {
     this._scene = scene;
     this.p = physicsState;
     this._gameLayer = gameLayer;
-    this._rotation = 0;
+    this._rotation = 118;
     this.rotateActionActive = true;
     this.rotateActionTime = 0;
     this.rotateActionDuration = 0;
@@ -114,8 +114,8 @@ class Player {
     this._flyParticleEmitter = scene.add.particles(0, 0, "GJ_WebSheet", {
       frame: "square.png",
       speed: {
-        min: 22,
-        max: 38
+        min: 50,
+        max: 60
       },
       angle: {
         min: 225,
